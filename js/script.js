@@ -24,8 +24,9 @@ function insNum() {
 
       if (success) {
         console.log(value);
+        // inserisco il numero
         $(".quadrato p").text(value);
-
+        // cambio il colore del quadrato tra maggiore e minore
         if (value<=5) {
           $(".quadrato").addClass("minore");
         }else {
