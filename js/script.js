@@ -9,7 +9,7 @@
 
 function clickQuadrato() {
   var quadrato = $(".quadrato");
-  quadrato.click(insNum);
+  quadrato.click(insNum());
 }
 
 function insNum() {
