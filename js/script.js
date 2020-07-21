@@ -10,13 +10,11 @@
 function clickQuadrato() {
   var quadrato = $(".quadrato");
   quadrato.click(insNum);
-  console.log("click");
 }
 
 function insNum() {
 
   var quadrato = $(this);
-  console.log("insNum");
 
   $.ajax({
 
