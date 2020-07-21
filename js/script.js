@@ -33,8 +33,10 @@ function insNum() {
         // cambio il colore del quadrato tra maggiore e minore
         if (value<=5) {
           quadrato.addClass("minore");
+          quadrato.removeClass("maggiore");
         }else {
           quadrato.addClass("maggiore");
+          quadrato.removeClass("minore");
         }
       }
     },
