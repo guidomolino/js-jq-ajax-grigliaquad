@@ -9,10 +9,14 @@
 
 function clickQuadrato() {
   var quadrato = $(".quadrato");
-  quadrato.click(insNum());
+  quadrato.click(insNum);
+  console.log("click");
 }
 
 function insNum() {
+
+  var quadrato = $(".quadrato");
+  console.log("insNum");
 
   $.ajax({
 
@@ -25,12 +29,12 @@ function insNum() {
       if (success) {
         console.log(value);
         // inserisco il numero
-        $(".quadrato p").text(value);
+        $(this).children("p").text(value);
         // cambio il colore del quadrato tra maggiore e minore
         if (value<=5) {
-          $(".quadrato").addClass("minore");
+          $(this).addClass("minore");
         }else {
-          $(".quadrato").addClass("maggiore");
+          $(this).addClass("maggiore");
         }
       }
     },
